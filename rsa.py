@@ -1,6 +1,7 @@
 import secrets
 from rsa_help import *
 
+
 def generate_prime(n):
     p = int(secrets.token_hex(n), 16)
     while not is_prime(p):
