@@ -9,6 +9,7 @@ sha = SHA256()
 hash_func = lambda x: int_to_bytes(sha.hash(x))
 hash_len = 32
 
+
 def _choose_e(phi_n):
     while True:
         e = random.randint(3, phi_n - 1)

@@ -10,7 +10,7 @@ for bit_length in [512, 1024]:
     print(f'Message bit length: {m_len * 8}')
     plaintext = os.urandom(m_len)
 
-    start = time.time()
+    # start = time.time()
     public, private = rsa.new_key_pair(bit_length)
     # print(f'Key pair generation took: {time.time() - start:.4} s')
 
